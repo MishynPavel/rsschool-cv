@@ -1,1 +1,110 @@
-
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mishyn Pavel_CV</title>
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="head">
+				<h3>Resume</h3>
+				<h2>Mishyn Pavel</h2>
+			</div>
+			<div class="photo">
+				<img src="img/my_photo.png" alt="this is my face">
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div class="main_content">
+      <div class="container info">
+        <div class="info_block">
+          <h3>Contact Info:</h3>
+          <div class="a_info">
+            <a href="https://github.com/MishynPavel" title="go Git!">GitHub</a>
+            <a href="https://www.linkedin.com/in/pavel-mishyn-a59b161a9" title="go In!">Linkedin</a>
+            <a href="https://repl.it/@PavelMishyn" title="go Repl!">Repl</a>
+            <a href="mishynpn@gmail.com" title="go message!">Gmail</a>
+          </div>
+          <br>
+          <h3>Summary:</h3>
+          <div class="text">
+            <p>I strive to realize myself in front-end development. I have a small but useful and fundamental experience in project development at IT Academy. And working in other organizations and in other areas is a good example of using new ideas and interesting solutions in the field of programming. I actively expand my capabilities, knowledge and skills in my free time from work.</p>
+          </div>
+          <h3>Skills:</h3>
+          <h4>Programming Languages:</h4>
+          <div class="programms">
+            <ul>
+              <li id="num"><span>JavaScript</span></li>
+              <li id="num"><span>HTML</span></li>
+              <li id="num"><span>CSS</span></li>
+              <li id="num"><span>PHP</span></li>
+            </ul>
+          </div>
+          <h4>Additional Stuff:</h4>
+          <div class="stuff">
+            <ul>
+              <li id="num"><span>Git</span></li>
+              <li id="num"><span>Bootstrap</span></li>
+              <li id="num"><span>Photoshop</span></li>
+              <li id="num"><span>3D programs</span></li>
+            </ul>
+          </div>
+          <h3>Code Example:</h3>
+          <div class="code">
+            <code>
+              ?php
+              //print_r($_POST);
+              $email = $_POST['email'];
+              $message = $_POST['message'];
+              $error =''
+              if(trim($email) == '')
+                $error = 'Not entered email!';
+              else if(trim($message) == '')
+                $error = 'Not entered message!';
+              else if(strlen($message) <10)
+                $error = 'Enter a message more than 10 characters!';
+              if($error != '') {
+                echo $error;
+                exit;
+              }
+              $subject = "=?utf-8?B?".base64_encode("Test message")."?=";
+              $headers = "From: $email\r\nRiply-to: $email\r\nContent-type: text/html; charset=utf-8\r\n";
+              mail('mpndesign@mail.ru', $subject, $message, $headers);
+              header('Location: /about.php');
+              ?
+            </code>
+          </div>
+          <br>
+          <h3>Experience:</h3>
+            <div class="work">
+              <ul>
+                <li id="num"><a href="https://FD1projectSmallFish.pavelmishyn.repl.co" title="FD1">IT Academy-FD1</a></li>
+                <li id="num"><a href="https://FD2projectColoring.pavelmishyn.repl.col" title="FD2">IT Academy-FD2</a></li>
+                <li id="num"><a href="https://Bootstrap.pavelmishyn.repl.co" title="Bootstrap">Repl-Bootstrap</a></li>
+                <li id="num"><a href="https://PHPsite.pavelmishyn.repl.co" title="PHP">Repl-php</a></li>
+              </ul>
+            </div>
+          <h3>Education:</h3>
+            <div class="educ">
+              <h4>2019-2020: Self-education</h4>
+              <h4>2019-2020: IT Academy; FD_1 - Websit development with html, CSS & javascript.(Minsk)</h4>
+              <h4>2019: IT Academy; FD_2 - Web application development with javascript.(Minsk).</h4>
+              <h4>2008-2013: Minsk Innovation University(МИУ); Design(Minsk)</h4>
+            </div>
+            <h3>Languages</h3>
+            <div class="lang">
+              <ul>
+                <li id="num"><span>Russian (native speaker)</span></li>
+                <li id="num"><span>English (Elementary possession)</span></li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
