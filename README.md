@@ -1,2 +1,2 @@
 
-[CV_HTML](https://MishynPavel.github.io/rsschool-cv/)
+https://MishynPavel.github.io/rsschool-cv/
